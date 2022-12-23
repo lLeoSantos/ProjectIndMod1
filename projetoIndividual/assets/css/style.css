@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');               
+
+
+/* Zerando todas as bordas da page  */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* Determinando o tamanho minimo e maximo de ajuste para os conteudos
+    dentro do body */
+    max-width: 2000px;
+    min-width: 300px;
+}
+/* Div para ajustar todo o menu no topo  */
+#all{
+    display: flex;  /* Deixando tudo flexivel dentro da div pai */
+    flex-direction: column; /* Ordenando como eu quero que os objts se orientem */
+    justify-content: center; /* Dizendo para as box ficarem centralizadas */
+    align-items: center; /* Centralizando todo o conteudo */
+    width: 100%;
+    height: 400px; 
+}
+li{
+    list-style-type: none; /* formatação da estilização da lista */
+}
+h1{
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    
+}
+#menu{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Formatação da tag a  */
+a{
+    text-decoration: none; /* retirando  o sublinhado do link */
+    color:inherit; /* retitrando a formatação de cor dos links */
+}
+.abasMenu{
+    margin-left: 10px; /*Margin para espaçar o menu*/
+}
+#sobreMim{
+    /* Adicionando as bordas laterais para fazer uma
+    separação do menu */
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    /* Adicionando margin interna para deixar uma melhor
+    experiencia para o usuario */
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+/* Adicionando efeitos visuais para quando passar o cursor  */
+a:hover{
+    font-size: 18px; /* Aumentando a fonte */
+    transition-delay: 0,40s; /* Suavizando a forma como o efeito acontece */
+}
+#allContatos{
+    margin: 20px;
+}
+.meusContatos{
+    padding-top: 10px;
+}
+.meusContatos a{
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+.meusContatos a:hover{
+    text-shadow: 1px 0px gray; /* Adicionando sombra ao texto */
+    /* transition-delay: 0.5s; */
+    /* font-size: 20px; */
+}
+#bordaContatos{
+    border-top: 2px solid gray;
+}
+
+#nomeContatos{
+    font-size: 15px;
+}
+
