@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');               
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 /* Zerando todas as bordas da page  */
 *{
@@ -11,7 +11,46 @@ body{
     dentro do body */
     max-width: 2000px;
     min-width: 300px;
+    min-height: 100%;
+    background: #e5e5e5;
 }
+.midPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+.margim{
+    border-top: 2px solid #fca311;
+}
+li{
+    list-style-type: none; /* formatação da estilização da lista */
+}
+h1{
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    color: #000000;
+} 
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000000;
+    font-size: 15px;
+} 
+footer{
+    background: #000000;
+    color: #e5e5e5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    }
+/* ------------------------ Menu ----------------- */
 /* Div para ajustar todo o menu no topo  */
 #all{
     display: flex;  /* Deixando tudo flexivel dentro da div pai */
@@ -21,19 +60,13 @@ body{
     width: 100%;
     height: 400px; 
 }
-li{
-    list-style-type: none; /* formatação da estilização da lista */
-}
-h1{
-    font-size: 50px;
-    font-family: 'Roboto Slab', serif;
-    
-}
-#menu{
+.menu{
     width: 100%;
     height: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: #000000;
 }
 
 /* Formatação da tag a  */
@@ -47,8 +80,8 @@ a{
 #sobreMim{
     /* Adicionando as bordas laterais para fazer uma
     separação do menu */
-    border-left: 2px solid gray;
-    border-right: 2px solid gray;
+    border-left: 2px solid #fca311;
+    border-right: 2px solid #fca311;
     /* Adicionando margin interna para deixar uma melhor
     experiencia para o usuario */
     padding-left: 5px;
@@ -60,6 +93,34 @@ a:hover{
     font-size: 18px; /* Aumentando a fonte */
     transition-delay: 0,40s; /* Suavizando a forma como o efeito acontece */
 }
+/* ------------------------- Page Home ------------------------- */
+#imgHome{
+    max-width: 300px; /* Utilizando do "Max" para que a imagem reduza o tamanho sem perder a propoção */
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+#paragrafosHome{
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+/* --------------------------- Page Sobre mim -------------- */
+
+
+
+
+
+
+/* ---------------------------- Page Contatos ------------------ */
 #allContatos{
     margin: 20px;
 }
@@ -68,15 +129,12 @@ a:hover{
 }
 .meusContatos a{
     font-size: 15px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .meusContatos a:hover{
-    text-shadow: 1px 0px gray; /* Adicionando sombra ao texto */
+    text-shadow: 1px 0px #000000; /* Adicionando sombra ao texto */
     /* transition-delay: 0.5s; */
     /* font-size: 20px; */
-}
-#bordaContatos{
-    border-top: 2px solid gray;
 }
 
 #nomeContatos{
