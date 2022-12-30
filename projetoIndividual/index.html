@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./assets/icons/icon.svg" type="image/png">
     <title>Home</title>
 </head>
 <body>
@@ -15,15 +16,16 @@
                     <h1>Leonardo Santos</h1>
                 </div>
                 <ul class="menu">
-                    <li class="abasMenu" id="home"><a href="./index.html">Home</a></li>
-                    <li class="abasMenu" id="sobreMim"><a href="./sobre.html">Sobre Mim</a></li>
-                    <li class="abasMenu" id="contatos"><a href="./contatos.html">Contatos</a></li>
+                    <li class="abasMenu menuTop" id="home"><a href="./index.html">Home</a></li>
+                    <li class="abasMenu menuTop" id="sobreMim"><a href="./sobre.html">Sobre Mim</a></li>
+                    <li class="abasMenu menuTop" id="contatos"><a href="./contatos.html">Contatos</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Separando toda parte de contudo da pagina -->
         <section class="midPage">
             <div>
                 <img id="imgHome" src="./assets/img/imgHome.jpg"  alt="minhaFoto">
@@ -36,7 +38,9 @@
                 </ul>
             </div>
             <div>
+                <!-- Aqui é a mesma margin que usei na page contatos -->
                 <div class="margim"></div>
+                <!-- Uma div para colocar um breve resumo sobre mim -->
                 <div id="paragrafosHome">
                     <p>Oi! Meu nome é Leonardo. Atualmente sou um Dev em desenvolvimento que tem como objetivo principal atuar com excelêcia a profissão de
                         Dev Learning (Área para qual estou me preparando agora), e seus cargos subsequentes.</p>
@@ -47,7 +51,7 @@
             </div>
         </section>
     </main>
-
+    <!-- rodape que se repetirá em todas as paginas -->
     <Footer>
         &copy; Leonardo Santos Costa, 2022-2023 Todos os Direitos Reservados
     </Footer>

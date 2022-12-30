@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/jpg" href="./assets/icons/icon.svg" type="image/png">
+    <script src="https://kit.fontawesome.com/f804f86631.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
 </head>
@@ -15,13 +17,44 @@
                     <h1>Leonardo Santos</h1>
                 </div>
                 <ul class="menu">
-                    <li class="abasMenu" id="home"><a href="./index.html">Home</a></li>
-                    <li class="abasMenu" id="sobreMim"><a href="./sobre.html">Sobre Mim</a></li>
-                    <li class="abasMenu" id="contatos"><a href="./contatos.html">Contatos</a></li>
+                    <li class="abasMenu menuTop" id="home"><a href="./index.html">Home</a></li>
+                    <li class="abasMenu menuTop" id="sobreMim"><a href="./sobre.html">Sobre Mim</a></li>
+                    <li class="abasMenu menuTop" id="contatos"><a href="./contatos.html">Contatos</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <!-- Inicitando meu formulário -->
+    <form>
+        <div class="midPage">
+
+            <!-- Agrupando os elementos de Nome e Sobrenome -->
+            <fieldset>
+                <div class="formulario">
+                    <!-- Nomeando meu input -->
+                    <label><strong>Nome</strong></label>
+                    <!-- Criando meu input de nome -->
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="formulario">
+                    <label><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+            <div class="formulario boxLeft">
+            <label><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="formulario boxLeft">
+            <label><strong>Deixe seu feedback aqui:</strong></label>
+            <textarea rows="6" name="feedback" id="feedback"></textarea>
+        </div>
+        <div id="botao">
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+    </form>
+    <!-- config da parte inferior da pagina com meus contatos -->
     <section id="allContatos">
         <div><h3>Contatos</h3></div>
         <div>
@@ -39,10 +72,13 @@
                 <h5>WhatsApp: <a href="https://web.whatsapp.com/send?phone=5521975917170" target="_blank">+55 (21)975917170</a></h5>
             </div>
             <div class="meusContatos">
-                <h5>Me encontre também por meio do <a href="https://www.linkedin.com/in/leonardo-santos-359826191/" target="_blank">Linkedin</a>
-                e do <a href="https://github.com/lLeoSantos" target="_blank">GitHub</a></h5>
+                <h5>Me encontre também por meio do <a href="https://www.linkedin.com/in/leonardo-santos-359826191/" target="_blank">Linkedin<i class="fa-brands fa-linkedin"></i></a>
+                e do <a href="https://github.com/lLeoSantos" target="_blank">GitHub<i class="fa-brands fa-square-github"></i></a></h5>
             </div>
         </div>
     </section>
+    <Footer>
+        &copy; Leonardo Santos Costa, 2022-2023 Todos os Direitos Reservados
+    </Footer>
 </body>
 </html>
